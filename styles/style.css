@@ -8,11 +8,11 @@
   font-family: var(--main-font);
   font-variation-settings: "wght" var(--fw-page);
   color: var(--accent-color);
-  background-color: var(--bg-color);
+  background-color: #ffffff;
   background-image: var(--bg-image);
-  background-size: contain;
-  background-position: center;
-  background-attachment: fixed;
+  background-size: 100% 960px, 100% 960px, 100% 960px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top center, top center, top center;
 }
 
 .block-size {
@@ -23,7 +23,7 @@
 .header {
   inline-size: clamp(375px, 260.5634px + 30.5164vw, 700px);
   border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
+  background-color: #ffffff;
   margin: 100px auto;
   font-family: var(--same-font);
   display: flex;
@@ -69,7 +69,7 @@
 
 .card {
   border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
+  background-color: #ffffff;
 }
 
 .card-title {
@@ -96,7 +96,7 @@
   inset-block-start: clamp(1.4375rem, 1.3935rem + 0.1878vw, 1.5625rem);
   inset-inline-end: clamp(0.6875rem, 0.3794rem + 1.3146vw, 1.5625rem);
   mix-blend-mode: hard-light;
-  text-shadow: -1px 0 var(--label-color), 0 1 var(--label-color),
+  text-shadow: -1px 0 var(--label-color), 0 1px var(--label-color),
     1px 0 var(--label-color), 0 -1px var(--label-color);
 }
 
@@ -276,8 +276,6 @@
   z-index: 1;
   block-size: 22px;
   inline-size: auto;
-  color: var(--button-color);
-  mix-blend-mode: difference;
 }
 
 @media (width <= 375px) {
