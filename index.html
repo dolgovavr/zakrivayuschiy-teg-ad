@@ -239,7 +239,7 @@
         
       </section>
     </main>
-    <section>
+        <section>
       <button class="button-save button-filling" onclick="window['dialog-id'].showModal();" aria-controls="dialog-id" type="button" aria-label="кнопка сохранения">
         <svg class="floppy-icon" viewbox="0 0 40 40">
           <use href="./svg/floppy.svg#floppy"></use>
@@ -251,9 +251,11 @@
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-        <button class="button-close dialog-text button-filling" type="button" onclick="window['dialog-id'].close();" aria-label="ок">
-          <span>ок</span>
-        </button>
+        <form method="dialog">
+          <button class="button-close dialog-text button-filling" type="submit" aria-label="ок">
+            <span>ок</span>
+          </button>
+        </form>
       </dialog>
     </section>
     <script src="./scripts/like.js"></script>
